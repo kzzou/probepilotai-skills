@@ -1,72 +1,856 @@
 {
-  "schema_version": 1,
-  "repository": "https://github.com/kzzou/probepilotai-skills",
-  "base_url": "https://raw.githubusercontent.com/kzzou/probepilotai-skills/main",
-  "generated_at": "2026-07-10T00:00:00Z",
-  "skills": [
-    {
-      "id": "probepilot-debug-workflow",
-      "name": "自动调试工作流",
-      "version": "1.0.0",
-      "description": "能力检查、烧录、复位、日志诊断、受控恢复与报告的一体化编排。",
-      "category": "工作流",
-      "author": "ProbePilotAI",
-      "license": "MIT",
-      "files": [
-        {
-          "path": "SKILL.md",
-          "sha256": "a74603fc0565fe4c4e5ace6e76fa57bed6262cc68220ae2b8ff45ab92c46a88d"
-        }
-      ],
-      "rating": { "average": 5.0, "count": 1 }
-    },
-    {
-      "id": "probepilot-flash",
-      "name": "固件烧录",
-      "version": "1.0.0",
-      "description": "通过 Studio MCP 安全选择固件、执行 SWD 烧录、校验并复位运行。",
-      "category": "烧录",
-      "author": "ProbePilotAI",
-      "license": "MIT",
-      "files": [
-        {
-          "path": "SKILL.md",
-          "sha256": "67ecdee1de6fe4e7894613de217cd1c95cc29b217188b34e328ffa0eca146f17"
-        }
-      ],
-      "rating": { "average": 5.0, "count": 1 }
-    },
-    {
-      "id": "probepilot-power-recovery",
-      "name": "受控供电恢复",
-      "version": "1.0.0",
-      "description": "根据设备能力、profile、电压和电流限制执行 reset 或 power cycle。",
-      "category": "恢复",
-      "author": "ProbePilotAI",
-      "license": "MIT",
-      "files": [
-        {
-          "path": "SKILL.md",
-          "sha256": "180850dd92b4dca3531a50269cddcf8f0a842f24f28f237aec64c68ba16861f0"
-        }
-      ],
-      "rating": { "average": 5.0, "count": 1 }
-    },
-    {
-      "id": "probepilot-serial-diagnosis",
-      "name": "串口日志诊断",
-      "version": "1.0.0",
-      "description": "采集 UART 日志并分类启动失败、看门狗、断言与 HardFault。",
-      "category": "诊断",
-      "author": "ProbePilotAI",
-      "license": "MIT",
-      "files": [
-        {
-          "path": "SKILL.md",
-          "sha256": "c8e436123eefc198ceb7c8870126c6d181948d3cb7eb29bfed96480edcd8529f"
-        }
-      ],
-      "rating": { "average": 5.0, "count": 1 }
-    }
-  ]
+    "schema_version":  1,
+    "repository":  "https://github.com/kzzou/probepilotai-skills",
+    "base_url":  "https://raw.githubusercontent.com/kzzou/probepilotai-skills/main",
+    "generated_at":  "2026-07-10T03:27:20.6851276Z",
+    "skills":  [
+                   {
+                       "id":  "probepilot-debug-workflow",
+                       "name":  "自动调试工作流",
+                       "version":  "1.0.0",
+                       "description":  "能力检查、烧录、复位、日志诊断、受控恢复与报告的一体化编排。",
+                       "category":  "工作流",
+                       "author":  "ProbePilotAI",
+                       "license":  "MIT",
+                       "files":  [
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "a74603fc0565fe4c4e5ace6e76fa57bed6262cc68220ae2b8ff45ab92c46a88d"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  5.0,
+                                      "count":  1
+                                  }
+                   },
+                   {
+                       "id":  "probepilot-flash",
+                       "name":  "固件烧录",
+                       "version":  "1.0.0",
+                       "description":  "通过 Studio MCP 安全选择固件、执行 SWD 烧录、校验并复位运行。",
+                       "category":  "烧录",
+                       "author":  "ProbePilotAI",
+                       "license":  "MIT",
+                       "files":  [
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "67ecdee1de6fe4e7894613de217cd1c95cc29b217188b34e328ffa0eca146f17"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  5.0,
+                                      "count":  1
+                                  }
+                   },
+                   {
+                       "id":  "probepilot-power-recovery",
+                       "name":  "受控供电恢复",
+                       "version":  "1.0.0",
+                       "description":  "根据设备能力、profile、电压和电流限制执行 reset 或 power cycle。",
+                       "category":  "恢复",
+                       "author":  "ProbePilotAI",
+                       "license":  "MIT",
+                       "files":  [
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "180850dd92b4dca3531a50269cddcf8f0a842f24f28f237aec64c68ba16861f0"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  5.0,
+                                      "count":  1
+                                  }
+                   },
+                   {
+                       "id":  "probepilot-serial-diagnosis",
+                       "name":  "串口日志诊断",
+                       "version":  "1.0.0",
+                       "description":  "采集 UART 日志并分类启动失败、看门狗、断言与 HardFault。",
+                       "category":  "诊断",
+                       "author":  "ProbePilotAI",
+                       "license":  "MIT",
+                       "files":  [
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "c8e436123eefc198ceb7c8870126c6d181948d3cb7eb29bfed96480edcd8529f"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  5.0,
+                                      "count":  1
+                                  }
+                   },
+                   {
+                       "id":  "serial-shell",
+                       "name":  "serial-shell",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过串口与嵌入式设备建立交互式 Shell 会话、执行单条命令或批量脚本时使用。",
+                       "category":  "涓插彛",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/serial-shell",
+                       "files":  [
+                                     {
+                                         "path":  "shell_proxy.py",
+                                         "sha256":  "e167e25bac7f2f19b9e3cf24730ac85a6e4062437c988c8a97f5662265c0a191"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "18e77cbe812de1b2e102e9d1df7696bdb0732d139f2793cda60bc149818e2c60"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "build-platformio",
+                       "name":  "build-platformio",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 PlatformIO 命令行编译嵌入式工程，调用自带脚本解析环境配置、执行构建并定位固件产物时使用。",
+                       "category":  "鏋勫缓",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/build-platformio",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "d4ba032fa9b631b72b81eeadbf123caecf5fbe87e6dc2407dd7a810aa4df252e"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "bffe1c2c065489573a73c5b4111eb5dfc320f852480cd776048fd250cb1ed672"
+                                     },
+                                     {
+                                         "path":  "scripts/platformio_builder.py",
+                                         "sha256":  "337a18b5eef8a2bf112a79a7ed402f8815bae19ff29a7cb5a7e9a6db06b7e08e"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "a22a1cf0a23e05b177a67c7235272ec20a40fc0f4371357e5870a846f7b64dbb"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "build-keil",
+                       "name":  "build-keil",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 Keil MDK 命令行编译嵌入式工程，调用自带脚本解析工程文件、执行构建并定位固件产物时使用。",
+                       "category":  "鏋勫缓",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/build-keil",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "5d90fb3ae4330580f26f4f178d1494aa8cc66b40eeab13400d450d8b94fa71c0"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "8c5298b349a03dbc977f55962ecf5d3786846811337dae6781c3ed91d6524a52"
+                                     },
+                                     {
+                                         "path":  "scripts/keil_builder.py",
+                                         "sha256":  "05373a1916bd7b8aadf311147c0b937041bc1a20c66fd7a3ebf8ea00369c4189"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "d6e67f1c6005397cd1de5f211b3bbac3f0e909d2ae64cba878c3c8aa29e69e98"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "visa-debug",
+                       "name":  "visa-debug",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要调试 GPIB/USB/TCP/Serial VISA 仪器通信时使用，支持 SCPI 命令收发、波形捕获、截图和持续监控。",
+                       "category":  "鍗忚涓庡伐浣滄祦",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/visa-debug",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "6812ec8507f76e3a27683c0a256cb87aab12349c5930d5022bd07cb1bc29aad5"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "92e23952f776f5f5d99840b130f19d59f43015454ddfdd548bcca106b2234d44"
+                                     },
+                                     {
+                                         "path":  "scripts/visa_tool.py",
+                                         "sha256":  "c00fa44c4161c81c0c7ffcb8f6453375acd72b107633d4544c3c1e2830fa9d8d"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "9ae88ed7c008c85cab5bbd9f21c97508e052b93b61cf323bca4e139dff42bae0"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "logic-analyzer",
+                       "name":  "logic-analyzer",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要用 Saleae 逻辑分析仪在线采集数字波形并解码 I2C/SPI/UART/CAN 时使用，通过 Logic 2 自动化服务驱动硬件采集、添加协议解码器并导出数据。",
+                       "category":  "鍗忚涓庡伐浣滄祦",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/logic-analyzer",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "ff8466815578ceceb849da926aa675632e8b253354f1080436e6da8f864d2562"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "00bbcc1458aa0cba6499d9f5fd154f195d517f43cbe76d8ba8295190e94378a6"
+                                     },
+                                     {
+                                         "path":  "scripts/la_tool.py",
+                                         "sha256":  "cbb6679613752e85bbd46da3fb605d48726cc4f13febb75f3b84a117b4261395"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "55e439f929b185b2e1f88f77f64cf87a5e431f77013e8efd958d40da415d0e10"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "workflow",
+                       "name":  "workflow",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要串联多个 skill 完成编译+烧录+监控或编译+烧录+调试等流水线任务时使用。",
+                       "category":  "鍗忚涓庡伐浣滄祦",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/workflow",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "4bf8533fb0dfde4423321a0650af6b383da5dda97a603be0a4090c81519ca750"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "4fd1144f7ab9394871aaa010c7cb745da32b51fc02f68507c200ede8fb6e65fa"
+                                     },
+                                     {
+                                         "path":  "scripts/workflow_runner.py",
+                                         "sha256":  "0a2df8ef45078a0e5227164e2451298505c4cb418b9a69557d37535baaffb5c7"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "a17240489ba866b82470cef8482b68dbd4575cd2c487d793f172fb2318c5344c"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "serial-monitor",
+                       "name":  "serial-monitor",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要识别正确串口、调用自带脚本抓取日志，并分析嵌入式固件运行状态时使用。",
+                       "category":  "涓插彛",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/serial-monitor",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "a0606488e01bf218df120b6653e1d3845bc3601bd141bb576ed4c409c6ec27d3"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "1fd96add8d4297ac62bc3e535dc4665dd42bde2f5930c1f9386ad3285a9eb68b"
+                                     },
+                                     {
+                                         "path":  "scripts/serial_monitor.py",
+                                         "sha256":  "ade7a8268a4e4172a606ff86d60b26b76bcb004bb3e76b47e7e5f3f4350d12f6"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "5f9766a913b91fe10186d0c8ece5224b094d2454416848d781eb0dd27655288a"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "flash-keil",
+                       "name":  "flash-keil",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 Keil MDK 内置调试器烧录固件到目标板时使用，利用工程中已配置的调试器和 Flash 算法执行下载。",
+                       "category":  "鐑у綍",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/flash-keil",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "0738ce5ebfc37208f2eb8ea5f4e2f6e31d4aa645d8bc8604629bb1b936ddc913"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "c92aadfd57a02d8ccc2b55e6c9d31b57beddffdd611fd916a741c1d37bf1b7a5"
+                                     },
+                                     {
+                                         "path":  "scripts/keil_flasher.py",
+                                         "sha256":  "9f6094c7903cd6223171b8fb4284b05f7c62950514f3acf1a65052fba24725ad"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "54fe35d8492c5f9343100d9e0f0cf923576d4b3159d70f30ee6e05774ee852d6"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "static-analysis",
+                       "name":  "static-analysis",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要对嵌入式 C/C++ 代码运行 cppcheck、clang-tidy 或 GCC analyzer 静态分析，或进行 MISRA-C 合规检查时使用。",
+                       "category":  "鍒嗘瀽",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/static-analysis",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "ae1ffc5ff21a3ca152196ad914c6418268a380e9688afb66b9c6282c5be7fe5d"
+                                     },
+                                     {
+                                         "path":  "references/misra-quick-ref.md",
+                                         "sha256":  "d34af87369724027e376ff996b3b5b24182caff6656a8959e39ecf8337d20a02"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "2c486e12fa5fe5135568a6b3576d65a47fc66f0757e7a2785598e01736e8b9cb"
+                                     },
+                                     {
+                                         "path":  "scripts/static_analyzer.py",
+                                         "sha256":  "e5740bbe314b338e439b643ef0c43b0bd889bf4b5a03c4a0c0c9c74358d256df"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "9e2a44e98b79535c868dedb535f8de0ddce8cf02e2764426a3273b60b6b69122"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "build-makefile",
+                       "name":  "build-makefile",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要编译基于裸 Makefile 的嵌入式固件工程（无 CMake/IDE），调用自带脚本解析 Makefile、执行 make 并定位固件产物时使用。",
+                       "category":  "鏋勫缓",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/build-makefile",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "76b623ede9d2064472988d80294866ea968bcbb4ecdd9ed64dd899415ade4512"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "86e85754747afabe30fa328980036cfa6688f680e69a6c41fc2bce683379e18d"
+                                     },
+                                     {
+                                         "path":  "scripts/makefile_builder.py",
+                                         "sha256":  "3f1b3ee3949f3d35743c956187aa2c5f9dddd3a2eb85601533bf7410a83717a4"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "05e84dacaa0d4be1838bff709a636956fe6d51dd0e8eed1d243098c94f87cbb1"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "build-cmake",
+                       "name":  "build-cmake",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要配置或构建基于 CMake 的嵌入式固件工程，调用自带脚本执行构建并定位固件产物时使用。",
+                       "category":  "鏋勫缓",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/build-cmake",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "3f28bab94e7785fdfbc279960d61b104be721a43e25f3b44702d41992619fe0c"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "97abdc39882ccd45471ae41e8a2b686f274bb1f768adde652b3c8ef86b8f87ed"
+                                     },
+                                     {
+                                         "path":  "scripts/cmake_builder.py",
+                                         "sha256":  "3065d7e947975bda497214d0833d0b4072b0535b4d21c7300fd6910082cabc0f"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "cfc2efd10affeb3193980f8e0c4b84ccabb92d8807082a3ffb0365da7266b147"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "flash-jlink",
+                       "name":  "flash-jlink",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要使用 SEGGER J-Link 探针烧录固件，或启动 RTT 日志捕获时使用。",
+                       "category":  "鐑у綍",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/flash-jlink",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "862bc2e8183912b897dd93a37b8bed24d165abc143137f0e461b76435d855bec"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "c11560150708e47e22b08b67e944eb1e5b4f277bbdcf3d5c019ef0c910885d44"
+                                     },
+                                     {
+                                         "path":  "scripts/jlink_flasher.py",
+                                         "sha256":  "db57b867a2d1d52602282092630347e612e09ae79ea213e05668d7c80152fd76"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "ad2ebccdc81730a6f592e5817cf3b0d33d665e970310a1f7706832599edd6140"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "debug-jlink",
+                       "name":  "debug-jlink",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 J-Link GDB Server 启动或附着 GDB 会话，完成固件下载、在线调试或崩溃现场检查时使用。",
+                       "category":  "璋冭瘯",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/debug-jlink",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "817ace667acb8bcd90cafe0f0cd6c3dcc3d634c81221a12fa1efdaeedfedf9d0"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "4b50fb15cb32f3ce38973c15541eed93db6bb5c8d9090c0295ff45da10d9c82a"
+                                     },
+                                     {
+                                         "path":  "scripts/jlink_debugger.py",
+                                         "sha256":  "c902354eb76f43942881c6bd79c0e609546cd87996c4f9913455a9136c284ebc"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "99f62ebd9189914d4a30837d41dd8baeb2de5fb65e492fd38971c18492219665"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "flash-idf",
+                       "name":  "flash-idf",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 ESP-IDF 工具链烧录固件到 ESP32 系列芯片，或启动调试会话时使用。",
+                       "category":  "鐑у綍",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/flash-idf",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "a4d5917982256808482180ea81477360a751d40c5dbc0729effd1c7572b04054"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "9d4916b68405306d5abb6b9374a4f7d6c5b7d05cb525d6d0c4035326d03724ae"
+                                     },
+                                     {
+                                         "path":  "scripts/idf_flasher.py",
+                                         "sha256":  "baccafdb5e4db2bf245e48ccd76ac0dcc4f72f64363b77c70547514933c8702b"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "90e8504c25e05741ee759f75f3ed60a91d301db4e56bc5873cb7e74a67591961"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "debug-gdb-openocd",
+                       "name":  "debug-gdb-openocd",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 OpenOCD 启动或附着 GDB 会话，调用自带脚本完成固件下载、在线调试或崩溃现场检查时使用。",
+                       "category":  "璋冭瘯",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/debug-gdb-openocd",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "844c00ec8e03cf724f6485d277793c6ed44e26472540c9702ae8b4933070f19a"
+                                     },
+                                     {
+                                         "path":  "references/debug-playbook.md",
+                                         "sha256":  "f74173b7a83dd84531cd459d7dac2edec3a8733ca44573c9143d93f992ebf8b2"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "e0ccd693a7d97594aa0b23d268ff24f1fb39e97b4a5590a81abea2588298f533"
+                                     },
+                                     {
+                                         "path":  "scripts/gdb_debugger.py",
+                                         "sha256":  "9f1ef634cf465320253fdf7fb800bca8dad8f5787db8e5b415cafe3bd62c7bb9"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "0efd6cf458a379bdae013a1673db0c65ce01bc8b529de64c6c64e85a8bb81145"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "modbus-debug",
+                       "name":  "modbus-debug",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要调试 Modbus RTU（串口）或 Modbus TCP（网络）设备通信时使用，支持寄存器读写、从站扫描和持续监控。",
+                       "category":  "鍗忚涓庡伐浣滄祦",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/modbus-debug",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "a41d2b873853510cf6fb23072179b8de2efa60a3633488cead1963821d18d948"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "1b6df8c60d5aa6ebf89fd8810eff227e1eb187d3a946dcf43a05fb099ae9ae62"
+                                     },
+                                     {
+                                         "path":  "scripts/modbus_tool.py",
+                                         "sha256":  "4abfd553b310fda7fbd5d087c2429238e4e78af4cd69820f53dfb3c88ff82500"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "ee136ff836fcea36b5af931d89b5d795806bbc6b63a7e2689ab2c760db7c9945"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "memory-analysis",
+                       "name":  "memory-analysis",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要解析 .map 文件或 ELF 获取固件内存使用报告、符号大小排名或版本对比时使用。",
+                       "category":  "鍒嗘瀽",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/memory-analysis",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "42f1b1493702e19666fc7bff032f35493982e3f99bb20c30dad2817386f5f745"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "e06a0376ce8fc59cacebb6295c61fe6e70534311dcc6e701319a90fda052ccdd"
+                                     },
+                                     {
+                                         "path":  "scripts/memory_analyzer.py",
+                                         "sha256":  "8ae6e3e6df2b5910c70b88926fa21bb11b4c8eb3165bb988adffbc46615266c0"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "a9bbc01fe3bb5e9efc4a3fa914cbcab18e325f0aa27ce2b9c50d0b0c25cd6149"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "debug-platformio",
+                       "name":  "debug-platformio",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 PlatformIO 内置调试功能对目标板进行 GDB 调试时使用，支持下载暂停、附加和崩溃现场分析。",
+                       "category":  "璋冭瘯",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/debug-platformio",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "d1017224824d3489d824bc171efe17bc88a66cc6317a64d2ca99738a260a0848"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "a1214b171e9e2c222f28e00864f9e63b8246ab1522ebf7666582fe77e0bbedcf"
+                                     },
+                                     {
+                                         "path":  "scripts/pio_debugger.py",
+                                         "sha256":  "6948382aa9f66861805e56e2f402e1bbc6c0e1f913ea303cbf955958f034f1bc"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "fa9aefba2e3f5b92e83e85c0c4376dbdffcbd60e1bc3bec8fca1575310438633"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "rtos-debug",
+                       "name":  "rtos-debug",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要进行 FreeRTOS/RT-Thread/Zephyr 的线程感知调试，查看任务列表、栈水位或死锁检测时使用。",
+                       "category":  "鍒嗘瀽",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/rtos-debug",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "4690f4aaa87db4f0e0952e88acbd0e32ec234792a6af31cd82ecfa29d10e308a"
+                                     },
+                                     {
+                                         "path":  "references/rtos-patterns.md",
+                                         "sha256":  "0fc9c3aa6fd915123c846d118549400178dd057dbf87ba712fac736849a33c31"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "852eb4e744f640285d9a7469ebb459081cbe5e67215c219a9a28407705f16c6a"
+                                     },
+                                     {
+                                         "path":  "scripts/rtos_debugger.py",
+                                         "sha256":  "2d83d026e23815f4ea3b7f118a5c1c6a8e75eccf77cbc2a5950f674632767ea5"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "bd9cf69d04d69a0b4cad33ffe52c3963642c5d88d9d2d1c71fcac3d58a367a5a"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "flash-openocd",
+                       "name":  "flash-openocd",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要使用已探测或显式指定的产物与探针配置，调用自带脚本通过 OpenOCD 烧录嵌入式固件时使用。",
+                       "category":  "鐑у綍",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/flash-openocd",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "a32286f870183ea2517cc22a43346045db93235096e2f432c6cf2d5182b90332"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "459788bae844470948531be4b7acd1839ce48bef8aed07d3802ba476e0b21141"
+                                     },
+                                     {
+                                         "path":  "scripts/openocd_flasher.py",
+                                         "sha256":  "94944c85f80d03aeb0bdc1af43f9f54647a856db0a3b2a74bfb3d726a629d7bd"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "ecebcc10f9e61aee36ae9d1c827e713902907cbc89a84d1e1e260c70cd9bacac"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "build-iar",
+                       "name":  "build-iar",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 IAR Embedded Workbench 命令行编译嵌入式工程，调用自带脚本解析工程文件、执行构建并定位固件产物时使用。",
+                       "category":  "鏋勫缓",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/build-iar",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "cb002a0806fc882287b4268d1d071fe0e3050cbfa90a768a96fd8b1eb1e976d4"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "fe5f8cb9e06a4a8995686c844b3183996511351eeee70d498e90340a2c013e5c"
+                                     },
+                                     {
+                                         "path":  "scripts/iar_builder.py",
+                                         "sha256":  "10b36e27ed123284f844c2783741a6a2d8e614265a8587bbbf4414d378c0dbdd"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "f34879d7f96c4958f7708bb842897564086ab18372a73516762a73af7cabc033"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "build-idf",
+                       "name":  "build-idf",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要配置或构建基于 ESP-IDF 的固件工程，调用自带脚本执行 idf.py build 并定位固件产物时使用。",
+                       "category":  "鏋勫缓",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/build-idf",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "3cb1e24df2e349eb827eb1da7b4feeed20f16e86b6d9f6ab456669397ee1cf53"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "d4fb51ccb074776a8cbeda6f3c4f73914135a8539c89b88abc8f2d4e3efc209d"
+                                     },
+                                     {
+                                         "path":  "scripts/idf_builder.py",
+                                         "sha256":  "5eb17d2cc41cfb9e32768a1ea55b37069650929f6a1f96a8a9da6283df518e62"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "14070d8bf26cc91cf4eb231a3c415b07efeae4630716189c4e62f6efdd3dc126"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "flash-platformio",
+                       "name":  "flash-platformio",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要通过 PlatformIO 烧录固件到目标板时使用，利用 platformio.ini 中的上传配置自动完成烧录。",
+                       "category":  "鐑у綍",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/flash-platformio",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "14516205e5622416932c9be674d30fb83524a7ab62523b4b99f26b12eb33800b"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "64a7d0cc2a9b856cc67d738f40f690aa71b2aa59f353f82be8ef70eeface3b9e"
+                                     },
+                                     {
+                                         "path":  "scripts/pio_flasher.py",
+                                         "sha256":  "cfdf0ee72abacbe5697371835afe2fa1d3a904c9b037ee549d8549264a281740"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "c432d25db49781c4a2047a81cdd0a5da58662c95368f218b1f3df2ecfa096cfc"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   },
+                   {
+                       "id":  "can-debug",
+                       "name":  "can-debug",
+                       "version":  "1.0.0-upstream.master",
+                       "description":  "当需要调试 CAN 总线通信时使用，支持通过 USB-CAN 适配器监听、发送 CAN 帧和扫描节点。",
+                       "category":  "鍗忚涓庡伐浣滄祦",
+                       "author":  "LeoKemp223 / ProbePilotAI mirror",
+                       "license":  "MIT",
+                       "source":  "https://github.com/LeoKemp223/embed-ai-tool/tree/master/skills/can-debug",
+                       "files":  [
+                                     {
+                                         "path":  "agents/openai.yaml",
+                                         "sha256":  "14c370262feff449d88c3e517c040ffe58232a68f713d9ef8dbd81a5838af84c"
+                                     },
+                                     {
+                                         "path":  "references/usage.md",
+                                         "sha256":  "b10ad7b15037415ed29a08527ce4be2bd4732fb8e4c4b149ec4d1ebed7001c10"
+                                     },
+                                     {
+                                         "path":  "scripts/can_tool.py",
+                                         "sha256":  "9abdc7fcb4d3e38979ca3a38101575c8890ea140fd8b7aa67873f715de601c57"
+                                     },
+                                     {
+                                         "path":  "SKILL.md",
+                                         "sha256":  "2497fc51c0dfa89e6e7a91d0541c9e203ba3bfe2d1083603331ff459753fda43"
+                                     }
+                                 ],
+                       "rating":  {
+                                      "average":  0,
+                                      "count":  0
+                                  }
+                   }
+               ]
 }

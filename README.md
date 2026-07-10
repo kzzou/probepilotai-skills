@@ -1,18 +1,7 @@
 # ProbePilotAI Skills
 
-ProbePilotAI 官方 Agent 技能仓库，供 ProbePilot Studio 发现、安装、更新和移除技能。
+ProbePilotAI 官方技能仓库的内置离线副本。在线索引由 ProbePilot Studio 从
+`https://github.com/kzzou/probepilotai-skills` 更新；远程不可用时回退到本目录清单。
 
-## 使用
-
-- 索引：[`registry.json`](./registry.json)
-- Studio 默认从 `https://raw.githubusercontent.com/kzzou/probepilotai-skills/main/registry.json` 同步。
-- 每个技能文件在安装前按清单中的 SHA-256 摘要校验。
-
-## 技能
-
-- `probepilot-debug-workflow`：自动调试工作流
-- `probepilot-flash`：固件烧录
-- `probepilot-power-recovery`：受控供电恢复
-- `probepilot-serial-diagnosis`：串口日志诊断
-
-评分基线由仓库维护者审核后更新；Studio 中的用户评分保存在本机，不会直接修改公共清单。
+每个技能至少包含一个带标准 frontmatter 的 `SKILL.md`。`registry.json` 为 Studio
+安装器提供版本、文件摘要和社区评分基线；安装时会逐文件验证 SHA-256。
