@@ -9,3 +9,6 @@ ProbePilotAI 官方技能仓库的内置离线副本。在线索引由 ProbePilo
 安装器会把完整技能目录同步到 Studio 用户数据目录，并复制到 Codex 的
 `~/.codex/skills`、Claude Code 的 `~/.claude/skills`；其他 Agent 可通过
 `PROBEPILOT_AGENT_SKILL_ROOTS` 配置技能目录。
+
+技能卡片的“公开反馈”会打开 GitHub Issue Form；仓库 Action 根据公开 Issue 聚合评分并更新
+`registry.json`，本机评分与公共评分分开保存。
