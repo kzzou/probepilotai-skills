@@ -1,0 +1,17 @@
+name = "probepilotai-anonymous-ratings"
+main = "worker.js"
+compatibility_date = "2026-07-10"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "probepilotai-ratings"
+database_id = "REPLACE_WITH_CLOUDFLARE_D1_DATABASE_ID"
+
+[vars]
+# Comma-separated skill IDs. Keep this in sync with registry.json.
+SKILL_IDS = "probepilot-debug-workflow,probepilot-flash,probepilot-power-recovery,probepilot-serial-diagnosis,serial-shell,build-platformio,build-keil,visa-debug,logic-analyzer,workflow,serial-monitor,flash-keil,static-analysis,build-makefile,build-cmake,flash-jlink,debug-jlink,flash-idf,debug-gdb-openocd,modbus-debug,memory-analysis,debug-platformio,rtos-debug,flash-openocd,build-iar,build-idf,flash-platformio,can-debug"
+ALLOWED_ORIGIN = "*"
+
+# Configure secrets with:
+# wrangler secret put RATING_SALT
+# wrangler secret put RATING_EXPORT_TOKEN
