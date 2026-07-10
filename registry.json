@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/kzzou/probepilotai-skills",
+  "base_url": "https://raw.githubusercontent.com/kzzou/probepilotai-skills/main",
+  "generated_at": "2026-07-10T00:00:00Z",
+  "skills": [
+    {
+      "id": "probepilot-debug-workflow",
+      "name": "自动调试工作流",
+      "version": "1.0.0",
+      "description": "能力检查、烧录、复位、日志诊断、受控恢复与报告的一体化编排。",
+      "category": "工作流",
+      "author": "ProbePilotAI",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "a74603fc0565fe4c4e5ace6e76fa57bed6262cc68220ae2b8ff45ab92c46a88d"
+        }
+      ],
+      "rating": { "average": 5.0, "count": 1 }
+    },
+    {
+      "id": "probepilot-flash",
+      "name": "固件烧录",
+      "version": "1.0.0",
+      "description": "通过 Studio MCP 安全选择固件、执行 SWD 烧录、校验并复位运行。",
+      "category": "烧录",
+      "author": "ProbePilotAI",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "67ecdee1de6fe4e7894613de217cd1c95cc29b217188b34e328ffa0eca146f17"
+        }
+      ],
+      "rating": { "average": 5.0, "count": 1 }
+    },
+    {
+      "id": "probepilot-power-recovery",
+      "name": "受控供电恢复",
+      "version": "1.0.0",
+      "description": "根据设备能力、profile、电压和电流限制执行 reset 或 power cycle。",
+      "category": "恢复",
+      "author": "ProbePilotAI",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "180850dd92b4dca3531a50269cddcf8f0a842f24f28f237aec64c68ba16861f0"
+        }
+      ],
+      "rating": { "average": 5.0, "count": 1 }
+    },
+    {
+      "id": "probepilot-serial-diagnosis",
+      "name": "串口日志诊断",
+      "version": "1.0.0",
+      "description": "采集 UART 日志并分类启动失败、看门狗、断言与 HardFault。",
+      "category": "诊断",
+      "author": "ProbePilotAI",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "sha256": "c8e436123eefc198ceb7c8870126c6d181948d3cb7eb29bfed96480edcd8529f"
+        }
+      ],
+      "rating": { "average": 5.0, "count": 1 }
+    }
+  ]
+}
