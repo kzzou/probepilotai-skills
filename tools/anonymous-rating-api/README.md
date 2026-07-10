@@ -14,7 +14,9 @@
 7. 将导出地址和 `RATING_EXPORT_TOKEN` 配置到技能仓库的 GitHub Actions secrets。
 
 也可以在技能仓库配置 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 后，手动运行
-`.github/workflows/deploy-anonymous-rating-api.yml` 部署 Worker。部署完成后，将 Worker
+`.github/workflows/deploy-anonymous-rating-api.yml` 部署 Worker。两个工作流模板也随本目录
+提供，若当前 GitHub Token 没有 `workflow` scope，请手动复制到仓库的 `.github/workflows/`。
+部署完成后，将 Worker
 地址写入 `registry.json` 的 `rating_api.submit_url`，或在上位机启动环境设置
 `PROBEPILOT_RATING_API_URL`。
 
