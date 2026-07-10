@@ -83,7 +83,7 @@
                    {
                        "id":  "serial-shell",
                        "name":  "serial-shell",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过串口与嵌入式设备建立交互式 Shell 会话、执行单条命令或批量脚本时使用。",
                        "category":  "涓插彛",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -107,7 +107,7 @@
                    {
                        "id":  "build-platformio",
                        "name":  "build-platformio",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 PlatformIO 命令行编译嵌入式工程，调用自带脚本解析环境配置、执行构建并定位固件产物时使用。",
                        "category":  "鏋勫缓",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -139,7 +139,7 @@
                    {
                        "id":  "build-keil",
                        "name":  "build-keil",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 Keil MDK 命令行编译嵌入式工程，调用自带脚本解析工程文件、执行构建并定位固件产物时使用。",
                        "category":  "鏋勫缓",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -171,7 +171,7 @@
                    {
                        "id":  "visa-debug",
                        "name":  "visa-debug",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要调试 GPIB/USB/TCP/Serial VISA 仪器通信时使用，支持 SCPI 命令收发、波形捕获、截图和持续监控。",
                        "category":  "鍗忚涓庡伐浣滄祦",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -203,7 +203,7 @@
                    {
                        "id":  "logic-analyzer",
                        "name":  "logic-analyzer",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要用 Saleae 逻辑分析仪在线采集数字波形并解码 I2C/SPI/UART/CAN 时使用，通过 Logic 2 自动化服务驱动硬件采集、添加协议解码器并导出数据。",
                        "category":  "鍗忚涓庡伐浣滄祦",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -235,7 +235,7 @@
                    {
                        "id":  "workflow",
                        "name":  "workflow",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要串联多个 skill 完成编译+烧录+监控或编译+烧录+调试等流水线任务时使用。",
                        "category":  "鍗忚涓庡伐浣滄祦",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -267,7 +267,7 @@
                    {
                        "id":  "serial-monitor",
                        "name":  "serial-monitor",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要识别正确串口、调用自带脚本抓取日志，并分析嵌入式固件运行状态时使用。",
                        "category":  "涓插彛",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -299,7 +299,7 @@
                    {
                        "id":  "flash-keil",
                        "name":  "flash-keil",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 Keil MDK 内置调试器烧录固件到目标板时使用，利用工程中已配置的调试器和 Flash 算法执行下载。",
                        "category":  "鐑у綍",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -331,7 +331,7 @@
                    {
                        "id":  "static-analysis",
                        "name":  "static-analysis",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要对嵌入式 C/C++ 代码运行 cppcheck、clang-tidy 或 GCC analyzer 静态分析，或进行 MISRA-C 合规检查时使用。",
                        "category":  "鍒嗘瀽",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -367,7 +367,7 @@
                    {
                        "id":  "build-makefile",
                        "name":  "build-makefile",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要编译基于裸 Makefile 的嵌入式固件工程（无 CMake/IDE），调用自带脚本解析 Makefile、执行 make 并定位固件产物时使用。",
                        "category":  "鏋勫缓",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -399,7 +399,7 @@
                    {
                        "id":  "build-cmake",
                        "name":  "build-cmake",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要配置或构建基于 CMake 的嵌入式固件工程，调用自带脚本执行构建并定位固件产物时使用。",
                        "category":  "鏋勫缓",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -431,7 +431,7 @@
                    {
                        "id":  "flash-jlink",
                        "name":  "flash-jlink",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要使用 SEGGER J-Link 探针烧录固件，或启动 RTT 日志捕获时使用。",
                        "category":  "鐑у綍",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -463,7 +463,7 @@
                    {
                        "id":  "debug-jlink",
                        "name":  "debug-jlink",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 J-Link GDB Server 启动或附着 GDB 会话，完成固件下载、在线调试或崩溃现场检查时使用。",
                        "category":  "璋冭瘯",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -495,7 +495,7 @@
                    {
                        "id":  "flash-idf",
                        "name":  "flash-idf",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 ESP-IDF 工具链烧录固件到 ESP32 系列芯片，或启动调试会话时使用。",
                        "category":  "鐑у綍",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -527,7 +527,7 @@
                    {
                        "id":  "debug-gdb-openocd",
                        "name":  "debug-gdb-openocd",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 OpenOCD 启动或附着 GDB 会话，调用自带脚本完成固件下载、在线调试或崩溃现场检查时使用。",
                        "category":  "璋冭瘯",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -563,7 +563,7 @@
                    {
                        "id":  "modbus-debug",
                        "name":  "modbus-debug",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要调试 Modbus RTU（串口）或 Modbus TCP（网络）设备通信时使用，支持寄存器读写、从站扫描和持续监控。",
                        "category":  "鍗忚涓庡伐浣滄祦",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -595,7 +595,7 @@
                    {
                        "id":  "memory-analysis",
                        "name":  "memory-analysis",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要解析 .map 文件或 ELF 获取固件内存使用报告、符号大小排名或版本对比时使用。",
                        "category":  "鍒嗘瀽",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -627,7 +627,7 @@
                    {
                        "id":  "debug-platformio",
                        "name":  "debug-platformio",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 PlatformIO 内置调试功能对目标板进行 GDB 调试时使用，支持下载暂停、附加和崩溃现场分析。",
                        "category":  "璋冭瘯",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -659,7 +659,7 @@
                    {
                        "id":  "rtos-debug",
                        "name":  "rtos-debug",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要进行 FreeRTOS/RT-Thread/Zephyr 的线程感知调试，查看任务列表、栈水位或死锁检测时使用。",
                        "category":  "鍒嗘瀽",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -695,7 +695,7 @@
                    {
                        "id":  "flash-openocd",
                        "name":  "flash-openocd",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要使用已探测或显式指定的产物与探针配置，调用自带脚本通过 OpenOCD 烧录嵌入式固件时使用。",
                        "category":  "鐑у綍",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -727,7 +727,7 @@
                    {
                        "id":  "build-iar",
                        "name":  "build-iar",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 IAR Embedded Workbench 命令行编译嵌入式工程，调用自带脚本解析工程文件、执行构建并定位固件产物时使用。",
                        "category":  "鏋勫缓",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -759,7 +759,7 @@
                    {
                        "id":  "build-idf",
                        "name":  "build-idf",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要配置或构建基于 ESP-IDF 的固件工程，调用自带脚本执行 idf.py build 并定位固件产物时使用。",
                        "category":  "鏋勫缓",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -791,7 +791,7 @@
                    {
                        "id":  "flash-platformio",
                        "name":  "flash-platformio",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要通过 PlatformIO 烧录固件到目标板时使用，利用 platformio.ini 中的上传配置自动完成烧录。",
                        "category":  "鐑у綍",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",
@@ -823,7 +823,7 @@
                    {
                        "id":  "can-debug",
                        "name":  "can-debug",
-                       "version":  "1.0.0-upstream.master",
+                       "version":  "1.0.0-upstream.7684d0ef497c",
                        "description":  "当需要调试 CAN 总线通信时使用，支持通过 USB-CAN 适配器监听、发送 CAN 帧和扫描节点。",
                        "category":  "鍗忚涓庡伐浣滄祦",
                        "author":  "LeoKemp223 / ProbePilotAI mirror",

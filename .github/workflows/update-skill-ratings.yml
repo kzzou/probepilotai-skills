@@ -8,6 +8,10 @@ permissions:
   contents: write
   issues: read
 
+concurrency:
+  group: skill-rating-aggregate
+  cancel-in-progress: false
+
 jobs:
   aggregate:
     if: contains(github.event.issue.labels.*.name, 'skill-rating') || github.event.action == 'opened' || github.event.action == 'edited'
