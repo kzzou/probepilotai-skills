@@ -12,6 +12,9 @@ database_id = "REPLACE_WITH_CLOUDFLARE_D1_DATABASE_ID"
 SKILL_IDS = "probepilot-debug-workflow,probepilot-flash,probepilot-power-recovery,probepilot-serial-diagnosis,serial-shell,build-platformio,build-keil,visa-debug,logic-analyzer,workflow,serial-monitor,flash-keil,static-analysis,build-makefile,build-cmake,flash-jlink,debug-jlink,flash-idf,debug-gdb-openocd,modbus-debug,memory-analysis,debug-platformio,rtos-debug,flash-openocd,build-iar,build-idf,flash-platformio,can-debug"
 ALLOWED_ORIGIN = "*"
 
+[secrets]
+required = ["RATING_SALT", "RATING_EXPORT_TOKEN"]
+
 # Configure secrets with:
 # wrangler secret put RATING_SALT
 # wrangler secret put RATING_EXPORT_TOKEN
