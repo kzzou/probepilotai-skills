@@ -122,3 +122,10 @@ data 列按 `--radix` 指定进制显示（默认十六进制，如 `0x2C`）。
 - 从 `build-keil` / `build-platformio` 烧录固件后，用此 skill 验证总线时序。
 - 与 `serial-monitor` 互补：serial-monitor 查看串口调试输出，logic-analyzer 做信号级时序验证。
 - 与 `visa-debug` 互补：visa-debug 用示波器测模拟量，logic-analyzer 解数字协议。
+## 自动探测
+
+- 读取 Project Profile 和设备能力，确认逻辑分析仪通道、采样率与触发条件。
+
+## 平台说明
+
+- 采集脚本使用跨平台 Python 标准库，设备接口名称由宿主平台适配。

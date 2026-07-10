@@ -71,3 +71,10 @@ description: 当需要调试 Modbus RTU（串口）或 Modbus TCP（网络）设
 
 - 从 `build-keil` / `build-platformio` 烧录固件后，用此 skill 验证 Modbus 通信。
 - 与 `serial-monitor` 互补：serial-monitor 查看串口原始输出，modbus-debug 进行协议级调试。
+## 自动探测
+
+- 从 Project Profile 读取串口或 TCP 端点、波特率、从站地址和超时参数；冲突时阻塞询问。
+
+## 平台说明
+
+- Modbus RTU/TCP 调试命令通过跨平台 Python 脚本执行，禁止猜测串口和从站地址。

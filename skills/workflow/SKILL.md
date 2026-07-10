@@ -75,3 +75,10 @@ description: 当需要串联多个 skill 完成编译+烧录+监控或编译+烧
 - 编排 `flash-keil` / `flash-openocd` / `flash-platformio` 的烧录步骤。
 - 编排 `serial-monitor` 的监控步骤。
 - 编排 `debug-gdb-openocd` / `debug-platformio` 的调试步骤。
+## 自动探测
+
+- 根据 Project Profile 的构建系统、探针和串口信息选择可用的下游技能；缺少关键字段时阻塞。
+
+## 平台说明
+
+- 工作流命令使用 Python 和宿主平台工具链，路径统一使用绝对路径交接给下游技能。

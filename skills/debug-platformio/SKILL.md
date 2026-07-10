@@ -62,3 +62,6 @@ description: 当需要通过 PlatformIO 内置调试功能对目标板进行 GDB
 
 - 从 `build-platformio` 接收编译成功的工程信息。
 - 调试发现问题后可回交给 `build-platformio` 修改代码重新编译。
+## 平台说明
+
+- PlatformIO CLI 与 GDB 调试器由宿主平台提供，输出路径统一转换为绝对路径。
