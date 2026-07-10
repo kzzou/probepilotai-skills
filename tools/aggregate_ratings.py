@@ -63,7 +63,13 @@ def main() -> None:
                 continue
             if skill_id not in known or rating not in range(1, 6):
                 continue
-            key = (issue.get("user", {}).get("login", "anonymous"), skill_id)
+            # GitHub supplies both a mutable login and a stable numeric user id.
+            # Prefer the id so a username rename cannot create a second vote for
+            # the same skill; keep login as a compatibility fallback for mocked
+            # or older API payloads.
+            user = issue.get("user") or {}
+            account_id = user.get("id") or user.get("login") or "anonymous"
+            key = (str(account_id), skill_id)
             candidate = (parse_time(issue.get("updated_at") or issue["created_at"]), rating)
             if key not in latest or candidate[0] > latest[key][0]:
                 latest[key] = candidate
