@@ -10,5 +10,6 @@ ProbePilotAI 官方技能仓库的内置离线副本。在线索引由 ProbePilo
 `~/.codex/skills`、Claude Code 的 `~/.claude/skills`；其他 Agent 可通过
 `PROBEPILOT_AGENT_SKILL_ROOTS` 配置技能目录。
 
-技能卡片的“公开反馈”会打开 GitHub Issue Form；仓库 Action 根据公开 Issue 聚合评分并更新
-`registry.json`，本机评分与公共评分分开保存。
+技能卡片支持匿名一键评分。上位机向匿名评分 API 提交评分和本机随机设备标识，API
+负责限流与同设备去重；仓库 GitHub Action 定时读取受保护的导出接口，聚合后更新
+`registry.json`。本机评分与公共评分分开保存，用户无需登录 GitHub。
