@@ -32,6 +32,7 @@ def fetch_export() -> list[dict]:
         headers={
             "Accept": "application/json",
             "Authorization": f"Bearer {token}",
+            "User-Agent": "ProbePilotAI-Skill-Rating-Aggregator/1.0 (+https://github.com/kzzou/probepilotai-skills)",
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
