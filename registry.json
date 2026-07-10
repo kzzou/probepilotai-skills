@@ -4,7 +4,7 @@
     "base_url":  "https://raw.githubusercontent.com/kzzou/probepilotai-skills/main",
     "generated_at":  "2026-07-10T03:27:20.6851276Z",
     "rating_api":  {
-                         "submit_url":  ""
+                         "submit_url":  "https://probepilotai-anonymous-ratings.zoukaizhang.workers.dev/v1/ratings"
                      },
     "skills":  [
                    {
