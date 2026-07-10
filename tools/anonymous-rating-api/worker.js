@@ -59,7 +59,9 @@ async function submit(request, env) {
   }
   let body;
   try {
-    body = await request.json();
+    const raw = await request.text();
+    if (raw.length > MAX_BODY_BYTES) return json({ ok: false, error: 'request is too large' }, 413, request, env);
+    body = JSON.parse(raw);
   } catch {
     return json({ ok: false, error: 'invalid JSON' }, 400, request, env);
   }
