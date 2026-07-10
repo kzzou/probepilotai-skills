@@ -3,6 +3,9 @@
     "repository":  "https://github.com/kzzou/probepilotai-skills",
     "base_url":  "https://raw.githubusercontent.com/kzzou/probepilotai-skills/main",
     "generated_at":  "2026-07-10T03:27:20.6851276Z",
+    "rating_api":  {
+                         "submit_url":  ""
+                     },
     "skills":  [
                    {
                        "id":  "probepilot-debug-workflow",
