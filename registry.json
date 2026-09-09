@@ -2,7 +2,7 @@
   "schema_version": 1,
   "repository": "https://github.com/kzzou/probepilotai-skills",
   "base_url": "https://raw.githubusercontent.com/kzzou/probepilotai-skills/main",
-  "generated_at": "2026-09-09T11:31:16.873483+00:00",
+  "generated_at": "2026-09-09T16:43:23.673544+00:00",
   "rating_api": {
     "submit_url": "https://probepilotai-anonymous-ratings.zoukaizhang.workers.dev/v1/ratings"
   },
